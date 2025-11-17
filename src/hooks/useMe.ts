@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import ApiClient from "../services/api-client";
 
 const useMe = <Customer>() => {
-  const apiClient = new ApiClient<Customer>("exchange/customers/me");
+  const apiClient = new ApiClient<Customer>("ladyfish/customers/me");
   return useQuery<Customer>({
     queryFn: () => {
       return apiClient.getAllSimple({});
