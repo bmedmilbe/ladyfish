@@ -7,7 +7,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <h3 className="text-center">Controle as tuas contas ao vivo</h3>
+      <h3 className="text-center">Controle os teus Fornecedores</h3>
       <hr />
       <div className="d-flex">
         <button
