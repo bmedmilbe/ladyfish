@@ -12,6 +12,13 @@ export interface Product {
   measure: Measure;
   nick_name: string;
 }
+export interface ProductForUpdate {
+  id: number;
+  name: string;
+  price: number;
+  measure: number;
+  nick_name: string;
+}
 export const ProductCopy = {
   id: 0,
   name: "",

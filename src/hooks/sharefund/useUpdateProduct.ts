@@ -1,12 +1,14 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import ApiClient from "../../services/api-client";
-import type { Product } from "../ground/products/useProducts";
+import type { Product, ProductForUpdate } from "../ground/products/useProducts";
 
 const useUpdateProduct = (product: Product | undefined) => {
-  const apiClient = new ApiClient<Product>("ladyfish/products/" + product?.id);
+  const apiClient = new ApiClient<ProductForUpdate>(
+    "ladyfish/products/" + product?.id
+  );
   const queryClient = useQueryClient();
 
-  return useMutation<Product, Error, Product>({
+  return useMutation<ProductForUpdate, Error, ProductForUpdate>({
     mutationFn: apiClient.updatePart,
 
     onSuccess: () => {
