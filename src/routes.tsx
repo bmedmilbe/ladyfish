@@ -7,12 +7,16 @@ import SupplierPage from "./pages/SupplierPage";
 import SuppliersPage from "./pages/SuppliersPage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
+import HomePage from "./pages/HomePage";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "login/", element: <LoginPage /> }],
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "login/", element: <LoginPage /> },
+    ],
   },
   {
     element: <PrivateLayout />,

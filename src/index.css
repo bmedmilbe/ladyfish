@@ -1,3 +1,11 @@
+:root {
+  --color-1: #ff4b00; /* global scope */
+  --color-2: #060c3e; /* global scope */
+  --color-5: #1c298c; /* global scope */
+  --color-3: #9bfcff; /* global scope */
+  --color-4: #e4feff; /* global scope */
+  --color-6: rgb(214, 51, 132);
+}
 .form-control-new {
   border-left: 0 !important;
   border-right: 0;
@@ -7,7 +15,7 @@
 }
 
 .title-text {
-  color: rgb(214, 51, 132);
+  color: var(--color-6);
   font-size: 1.4rem;
 }
 
@@ -15,6 +23,50 @@
   cursor: pointer;
 }
 .sub-titles {
-  color: rgb(214, 51, 132);
+  color: var(--color-6);
   font-size: 1.2rem;
+}
+
+.header {
+  background-color: var(--color-2);
+  padding: 3rem;
+}
+.header-text-box {
+  text-align: center;
+}
+.header-image {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 3rem;
+  max-width: 35rem;
+}
+.header-text-box {
+  background-color: var(--color-6);
+  border-radius: 4rem;
+  /* max-width: 25rem; */
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header-title {
+  color: var(--color-4);
+  font-size: 1.6rem;
+}
+.title-focus {
+  font-size: 2.4rem;
+  color: #25d366;
+  display: block;
+}
+.header-paragraph {
+  font-size: 1.3rem;
+  color: var(--color-4);
+}
+.header-phone {
+  background-color: var(--color-2);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  color: #25d366;
+  font-weight: bold;
+  text-decoration: none;
 }

@@ -37,11 +37,6 @@ const useSuppliers = (query_params: QueryParams) => {
     },
     queryKey: ["suppliers"],
     getNextPageParam: (lastPage, allPage) => {
-      // return 3;
-      // console.log(allPage.length % 10);
-      //check if no next page in last page
-      // console.log(lastPage);
-      // return 1;
       let count = 0;
       allPage.map((p) => (count = count + p.results.length));
       return count != lastPage.count ? allPage.length : undefined;
