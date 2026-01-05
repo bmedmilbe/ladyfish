@@ -11,7 +11,7 @@ A full-stack Inventory & Order Management system engineered to digitize seafood 
 ## 📸 Platform Preview
 Below are the key interfaces of the Ladyfish logistics system:
 
-**1. Inventory Management & Stock Levels** ![Inventory Dashboard](https://ladyfish.vercel.app/screenshot/Screenshot-123833png)
+**1. Inventory Management & Stock Levels** ![Inventory Dashboard](https://ladyfish.vercel.app/screenshot/Screenshot-123833.png)
 
 **2. Order Processing Workflow** ![Order System](https://ladyfish.vercel.app/screenshot/Screenshot-123907.png)
 
